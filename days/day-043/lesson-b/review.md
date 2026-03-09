@@ -1,3 +1,6 @@
 ## Day 043 — Lesson B (Applied) review notes
 
-Placeholder. Review notes will be generated when requested.
+Summarize:
+- What the scenario was for this day.
+- Which functions you wrote and how they relate to Lesson A.
+- Any bugs you hit and how you fixed them.
