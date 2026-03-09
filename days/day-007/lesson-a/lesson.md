@@ -2,12 +2,50 @@
 
 ### Objectives
 
-- Continue building JavaScript fundamentals.
-- Practice reading a small problem and turning it into code.
-- Strengthen your intuition for simple time complexity (mostly O(n)).
+- Introduce a **tiny testing mindset** with simple assertion helpers.
+- Practice writing **small, pure functions** and checking them with test cases.
+- Keep thinking about inputs, outputs, and edge cases.
 
-### Notes
+### Concepts for today
 
-This day belongs to the early foundations block (JavaScript → DS&A core → TypeScript).
-You will implement a few short functions and think about inputs, outputs,
-edge cases, and how many steps your code performs in the worst case.
+- **Assertions**:
+  - A check that should always be true if your code is correct.
+  - When it fails, it tells you something is wrong (bug or wrong assumption).
+- **Test cases**:
+  - Example inputs + expected outputs.
+  - Cover typical cases and edge cases (empty arrays, boundaries, etc.).
+
+We are not using a real test framework yet—just small helper functions and `console.log`.
+
+### Reading + examples
+
+```js
+function assertEqual(actual, expected, message) {
+  if (actual !== expected) {
+    console.log("FAIL:", message, "expected:", expected, "got:", actual);
+  } else {
+    console.log("PASS:", message);
+  }
+}
+
+function maxOfTwo(a, b) {
+  return a >= b ? a : b;
+}
+
+assertEqual(maxOfTwo(3, 5), 5, "maxOfTwo basic case");
+assertEqual(maxOfTwo(5, 5), 5, "maxOfTwo equal numbers");
+```
+
+Questions:
+
+- What happens if you accidentally implement `maxOfTwo` incorrectly?
+- Which edge cases are worth testing?
+- How does this help you trust your code as it grows?
+
+### What you’ll implement in the exercise
+
+In the exercise file you will:
+
+- Implement very small assertion helpers.
+- Write a couple of simple functions and a handful of test cases for each.
+- Practice thinking “what else could go wrong here?” before moving on.\*\*\*
