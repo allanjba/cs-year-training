@@ -1,12 +1,24 @@
 ## Day 006 — Lesson B (Applied)
 
-### Scenario
+### Scenario: Simple event analytics
 
-This day continues the early-phase applied work: small scripts and utilities
-for a fictional company, using the same core idea as Lesson A but in a
-slightly more realistic context (logs, metrics, text processing, or simple
-business rules).
+You are helping a small **analytics team** understand how users interact with
+their product. They record a stream of event names like `"page_view"`,
+`"signup"`, `"click_button"`, etc.
 
-You should:
-- Reuse patterns from Lesson A (loops, conditionals, simple data structures).
-- Keep functions small and testable.
+Today you will:
+
+- Apply your frequency-map skills to event data.
+- Compute basic counts that are the foundation of analytics dashboards.
+
+### Concepts in play
+
+- Counting how often each event type occurs.
+- Finding the most common event.
+- Turning raw data into a simple summary object.
+
+### What you’ll implement in the exercise
+
+- A function that returns a frequency map of events.
+- A function that finds the most common event.
+- A helper to compute total events for a selected subset of event types.\*\*\*
