@@ -1,0 +1,3 @@
+## Day 212 — Lesson A (Foundations)
+
+Placeholder. Content will be generated when requested.
