@@ -1,12 +1,24 @@
 ## Day 008 — Lesson B (Applied)
 
-### Scenario
+### Scenario: Daily account summary
 
-This day continues the early-phase applied work: small scripts and utilities
-for a fictional company, using the same core idea as Lesson A but in a
-slightly more realistic context (logs, metrics, text processing, or simple
-business rules).
+You are helping a small **fintech-style app** show users a quick summary of
+their account activity for the day, based on a list of transactions.
 
-You should:
-- Reuse patterns from Lesson A (loops, conditionals, simple data structures).
-- Keep functions small and testable.
+Today you will:
+
+- Reuse your transaction helpers to compute a simple summary.
+- Prepare data that could be shown in a basic “daily summary” UI later.
+
+### Concepts in play
+
+- Combining several small helpers into one higher-level function.
+- Thinking about what information a user actually needs.
+- Keeping calculations and formatting separate.
+
+### What you’ll implement in the exercise
+
+- Helpers that:
+  - Compute total credits, total debits, and net balance.
+  - Produce a small summary object with those values.
+- A few manual checks printing that summary for sample data.\*\*\*
